@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tools and services</title>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BMI_Calc.css">
+    <link rel="stylesheet" href="D:\fullstack projects\health portal\external css\style_BMI.css">
+    <link rel="stylesheet" href="D:\fullstack projects\health portal\external css\style_calorie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="C:\Users\Win10\Desktop\fullstack projects\medical portal\images\Logo.JPG" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="file:///F:/fullstack%20projects/health%20portal/home/home.html"><img title="Home" src="F:\fullstack projects\health portal\media\images\Arogya.jpg" alt=""></a>
+            <div class="navbar">
+                <marquee behavior="" direction="top">Welcome to Arogya Mitra</marquee>
+                <div class="nav_links">
+                    <div class="links">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Tools</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#BMI" name="BMI">BMI Calculator</a>
+                              <a href="#Cal_coun" name="Cal_coun">Calorie Counter</a>
+                              <a href="#Med_trac" name="Med_trac">Medication tracker</a>
+                              <a href="#Blood_press" name="Blood_press">Blood pressure</a>
+                              <a href="#Chol_coun" name="Chol_coun">Cholesterol counter</a>
+                              <a href="#Diab" name="Diab">Diabetes </a>
+                              <a href="#Nutri_trac" name="Nutri_trac">Nutrients tracker</a>
+                              <a href="#sleep_trac" name="sleep_trac">Sleep tracker</a>
+                              <a href="#canc_hair_loss" name="canc_hair_loss">Cancer and Hair loss</a>
+                              <a href="#Heart_rate" name="Heart_rate">Target Heart rate</a>
+                              <a href="#heal_risc_ass" name="heal_risc_ass">Health Risk assessment</a>
+                              <a href="#smok_alcoh_consump" name="smok_alcoh_consump">Smoking and alcohol consumption</a>
+                              <a href="#menst_cyc" name="menst_cyc">Menstrual cycle</a>
+                              <a href="#ovul_trac" name="ovul_trac">Ovulation tracker</a>
+                              <a href="#preg_trac" name="preg_trac">Pregnancy tracker</a>
+                              <a href="#breast_canc_risk" name="breast_canc_risk">Breast cancer risk assessment</a>
+                              <a href="#meno_symp_trac" name="meno_symp_trac">Menopause symptom tracker</a>
+                              <a href="#fert_calc" name="fert_calc">Fertility Calculator</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <div class="wrapper-container">
+
+        <!-- -------------------------------- Tools sections ------------------------------------------- -->
+
+        <div class="wrapper" id="Tools">
+            <section id="BMI">
+                <div class="container">
+                    <div class="bmi-calculator">
+                        <h1>BMI Calculator</h1>
+                        <div class="unit-toggle">
+                            <button id="us-btn" class="active">US Units</button>
+                            <button id="metric-btn">Metric Units</button>
+                        </div>
+            
+                        <!-- US Units Form -->
+                        <div id="us-section">
+                            <label for="age-us">Age:</label>
+                            <input type="number" id="age-us" min="1" required>
+            
+                            <div class="gender">
+                                <h4>Gender:</h4>
+                                <span class="gend">
+                                    <input type="radio" id="male-us" name="gender-us" value="Male">
+                                    <label for="male-us">Male</label>
+                                </span>
+                                <span class="gend">
+                                    <input type="radio" id="female-us" name="gender-us" value="Female">
+                                    <label for="female-us">Female</label>
+                                </span>
+                            </div>
+            
+                            <label for="height-us-feet">Height:</label>
+                            <input type="number" id="height-us-feet" placeholder="Feet" min="1" required>
+                            <input type="number" id="height-us-inches" placeholder="Inches" min="0" max="11" required>
+            
+                            <label for="weight-us">Weight (lbs):</label>
+                            <input type="number" id="weight-us" min="1" required>
+            
+                            <button onclick="calculateBMI('us')">Calculate BMI</button>
+                        </div>
+            
+                        <!-- Metric Units Form -->
+                        <div id="metric-section" class="metric-units" style="display: none;">
+                            <label for="age-metric">Age:</label>
+                            <input type="number" id="age-metric" min="1" required>
+            
+                            <div class="gender">
+                                <label>Gender:</label>
+                                <span class="gend"><input type="radio" id="male-metric" name="gender-metric" value="Male">
+                                <label for="male-metric">Male</label></span>
+                                <span class="gend"><input type="radio" id="female-metric" name="gender-metric" value="Female">
+                                <label for="female-metric">Female</label></span>
+                            </div>
+            
+                            <label for="height-metric">Height (cm):</label>
+                            <input type="number" id="height-metric" min="1" required>
+            
+                            <label for="weight-metric">Weight (kg):</label>
+                            <input type="number" id="weight-metric" min="1" required>
+            
+                            <button onclick="calculateBMI('metric')">Calculate BMI</button>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+            
+                    <div class="history">
+                        <h2 class="heading">History</h2>
+                        <ul id="history-stack"></ul>
+                    </div>
+                </div>
+                <!-- BMI guage -->       
+                <div class="result-section">
+                    <h2>Result</h2>
+                    <div class="bmi-value" id="bmi-value">BMI =  kg/m²</div>
+                    <div class="gauge-container">
+                        <div class="gauge">
+                            <div class="segment underweight">Underweight</div>
+                            <div class="segment normal">Normal</div>
+                            <div class="segment overweight">Overweight</div>
+                            <div class="segment obesity">Obesity</div>
+                            <div class="rider" id="rider"></div>
+                        </div>
+                        <div class="status" id="status">(Normal)</div>
+                    </div>
+                </div>
+             
+            </section>
+
+            <section id="Cal_coun">
+                <div class="container-1">
+                    <div class="calculator">
+                        <div class="toggle-buttons">
+                            <button id="us-button" class="active" onclick="toggleUnits('us')">US Units</button>
+                            <button id="metric-button" onclick="toggleUnits('metric')">Metric Units</button>
+                        </div>
+                        
+                        <div id="us-section" class="unit-section active">
+                            <label for="age">Age</label>
+                            <input type="number" id="us-age" min="0" placeholder="Years">
+                            
+                            <div class="gender">
+                                <h4>Gender:</h4>
+                                <span class="cal_gend">
+                                    <input type="radio" id="Male-us" name="gender-us" value="Male">
+                                    <label for="Male-us">Male</label>
+                                </span>
+                                <span class="cal_gend">
+                                    <input type="radio" id="Female-us" name="gender-us" value="Female">
+                                    <label for="Female-us">Female</label>
+                                </span>
+                            </div>
+                            
+                            <label for="us-height">Height</label>
+                            <input type="number" id="us-height" placeholder="Inches">
+            
+                            <label for="us-weight">Weight</label>
+                            <input type="number" id="us-weight" placeholder="Pounds">
+                        </div>
+            
+                        <div id="metric-section" class="unit-section">
+                            <label for="age">Age</label>
+                            <input type="number" id="metric-age" min="0" placeholder="Years">
+                            
+                            <div class="gender">
+                                <h4>Gender:</h4>
+                                <span class="cal_gend">
+                                    <input type="radio" id="male-us" name="gender-us" value="Male">
+                                    <label for="male-us">Male</label>
+                                </span>
+                                <span class="cal_gend">
+                                    <input type="radio" id="female-us" name="gender-us" value="Female">
+                                    <label for="female-us">Female</label>
+                                </span>
+                            </div>
+                            
+                            <label for="metric-height">Height</label>
+                            <input type="number" id="metric-height" placeholder="Centimeters">
+            
+                            <label for="metric-weight">Weight</label>
+                            <input type="number" id="metric-weight" placeholder="Kilograms">
+                        </div>
+            
+                        <label for="activity">Activity Level</label>
+                        <select id="activity" class="activity">
+                            <option value="sedentary">Sedentary: little or no exercise</option>
+                            <option value="light">Light: exercise 1-3 times/week</option>
+                            <option value="moderate">Moderate: exercise 4-5 times/week</option>
+                            <option value="active">Active: daily exercise or intense exercise 3-4 times/week</option>
+                            <option value="very-active">Very Active: intense exercise 6-7 times/week</option>
+                            <option value="extra-active">Extra Active: very intense exercise daily, or physical job</option>
+                        </select>
+            
+                        <button onclick="calculateCalories()" class="calculateCalories">Calculate</button>
+                        
+                        <div class="calorie-status" id="calorie-status"></div>
+            
+                        <div class="history-stack" id="history-stack"></div>
+                    </div>
+            
+                    <div class="gauge-section">
+                        <div class="gauge-container">
+                            <div class="gauge">
+                                <div class="gauge-pointer" id="gauge-pointer"></div>
+                            </div>
+                        </div>
+            
+                        
+            
+                        <div class="calorie-result" id="calorie-result">
+                            <p>The results show a number of daily calorie estimates that can be used as a guideline for how many calories to consume each day to maintain, lose, or gain weight at a chosen rate.</p>
+                            <div>
+                                <span>Maintain weight</span>
+                                <span class="calories" id="maintain-weight"></span>
+                                <span class="percent">100%</span>
+                            </div>
+                            <div>
+                                <span>Mild weight loss (0.5 lb/week)</span>
+                                <span class="calories" id="mild-loss"></span>
+                                <span class="percent">90%</span>
+                            </div>
+                            <div>
+                                <span>Weight loss (1 lb/week)</span>
+                                <span class="calories" id="weight-loss"></span>
+                                <span class="percent">80%</span>
+                            </div>
+                            <div>
+                                <span>Extreme weight loss (2 lb/week)</span>
+                                <span class="calories" id="extreme-loss"></span>
+                                <span class="percent">61%</span>
+                            </div>
+                            <div>
+                                <span>Mild weight gain (0.5 lb/week)</span>
+                                <span class="calories" id="mild-gain"></span>
+                                <span class="percent">110%</span>
+                            </div>
+                            <div>
+                                <span>Weight gain (1 lb/week)</span>
+                                <span class="calories" id="weight-gain"></span>
+                                <span class="percent">120%</span>
+                            </div>
+                            <div>
+                                <span>Fast weight gain (2 lb/week)</span>
+                                <span class="calories" id="fast-gain"></span>
+                                <span class="percent">139%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Med_trac">Medication tracker</section>
+            <section id="Blood_press">Blood pressure</section>
+            <section id="Chol_coun">Cholesterol counter</section>
+            <section id="Diab">Diabetes</section>
+            <section id="Nutri_trac">Nutrients tracker</section>
+            <section id="sleep_trac">Sleep tracker</section>
+            <section id="canc_hair_loss">Cancer and Hair loss</section>
+            <section id="Heart_rate">Target Heart rate</section>
+            <section id="heal_risc_ass">Smoking and alcohol consumption</section>
+            <section id="smok_alcoh_consump">Smoking and alcohol consumption</section>
+            <section id="menst_cyc">Menstrual cycle</section>
+            <section id="ovul_trac">Ovulation tracker</section>
+            <section id="preg_trac">Pregnancy tracker</section>
+            <section id="breast_canc_risk">Breast cancer risk assessment</section>
+            <section id="meno_symp_trac">Menopause symptom tracker</section>
+            <section id="fert_calc">Fertility Calculator</section>
+        </div>
+    </div>
+    <script src="F:\fullstack projects\health portal\Tools_&_Calculator\BMI_Calculator\BMI_Calc.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arogya Mitra | Brand store</title>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="F:\fullstack projects\health portal\store\store-brands\brand-store.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="D:\chirag\Core_web_design_org\project\asset\css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="C:\Users\Win10\Desktop\fullstack projects\medical portal\images\Logo.JPG" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="F:\fullstack projects\health portal\media\images\Arogya.jpg" onclick="redirect()" alt="">
+        </div>
+        <address>
+            <h4>Delivery in 10 minutes</h4>
+            <div class="location"><p id="user-loc">Add your location</p><div class="down"></div></div>
+        </address>
+
+
+        <div class="profile">Accounts<div class="down"></div></div>
+        <div class="cart"><i class="bi bi-cart3"></i>My Basket</div>
+    </header>
+    <nav>
+        <a href="file:///F:/fullstack%20projects/health%20portal/store/store-home/home.html">Home</a>
+        <a href="file:///F:/fullstack%20projects/health%20portal/store/store-products/products.html">Products</a>
+        <a href="#">Guides</a>
+        <a href="#">Blogs</a>
+        <a href="#" class="home">Brand store</a>
+        <a href="file:///F:/fullstack%20projects/health%20portal/store/store-contact-us/contact-us.html">Contact us</a>
+        <a href="#" title="Upload prescription"><i class="bi bi-arrow-bar-up"></i></a>
+        <a href="#"><i class="bi bi-funnel"></i></a>
+        <a href="#"><i class="bi bi-cart3"></i></a>
+    </nav>
+    <nav>
+        <a href="#himalya">Himalya</a>
+        <a href="#mamaearth">mamaearth</a>
+        <a href="#derma">Derma Co.</a>
+        <a href="#lotus">Lotus Herbals</a>
+        <a href="#plum">Plum</a>
+        <a href="#Minimalist">Minimalist</a>
+    </nav>
+    <div class="wrapper">
+        <div class="brand" id="himalya">
+
+            <!-- row 1 -->
+            <div class="product-row">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_4.webp" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Winter Defense Moisturizing Cream</h3>
+                        <p class="product-description">An effective blend of nourishing ingredients and herbal extracts moisturizes even the extremely dry areas of your skin.</p>
+                        <div class="product-price">
+                            <span class="price">₹ 90.00</span>
+                            <span class="discount-price">₹ 190.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_2.webp" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Almond & Rose Soap</h3>
+                        <p class="product-description">Himalaya’s Almond & Rose Soap, comes with the goodness of Almond and Rose help leaves your skin feel soft.</p>
+                        <div class="product-price">
+                            <span class="price">₹ 38.00</span>
+                            <span class="discount-price">₹ 50.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_3.webp" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cocoa Butter Intensive Body Lotion</h3>
+                        <p class="product-description">Deeply moisturizes and repairs dry skin</p>
+                        <div class="product-price">
+                            <span class="price">₹ 170.00</span>
+                            <span class="discount-price">₹ 270.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_1.webp" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Neem & Turmeric Soap</h3>
+                        <p class="product-description">Himalaya's Neem & Turmeric Soap blends together all the goodness of Neem and Turmeric.</p>
+                        <div class="product-price">
+                            <span class="price">₹ 64.00</span>
+                            <span class="discount-price">₹ 84.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- row 2 -->
+            <div class="product-row">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_F_1.webp" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Himalaya Purifying Neem Face Wash</h3>
+                        <p class="product-description">A clinically tested, soap-free formulation made with the unique combination of neem and turmeric.</p>
+                        <div class="product-price">
+                            <span class="price">₹ 159.00</span>
+                            <span class="discount-price">₹ 195.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_F_2.webp" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Himalaya Pollution Detox Charcoal Face Wash</h3>
+                        <p class="product-description">Himalaya Pollution Detox Charcoal Face Wash is a unique blend of Activated Coconut Charcoal and Green Tea.</p>
+                        <div class="product-price">
+                            <span class="price">₹ 110.00</span>
+                            <span class="discount-price">₹ 150.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_F_3.webp" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Himalaya Natural Glow Rose Face Gel</h3>
+                        <p class="product-description">Look beautiful, glow naturally!</p>
+                        <div class="product-price">
+                            <span class="price">₹ 90.00</span>
+                            <span class="discount-price">₹ 130.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_F_4.webp" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Himalaya Dark Spot Clearing Turmeric Face Serum</h3>
+                        <p class="product-description">Visibly reduces dark spots in just seven days. Using the Ayurvedic Svarasa cold-pressed extraction method, Himalaya Dark Spot
+                             Clearing Turmeric Face Serum is packed with potent Turmeric extract.</p>
+                        <div class="product-price">
+                            <span class="price">₹ 499.00</span>
+                            <span class="discount-price">₹ 589.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- row 3 -->
+            <div class="product-row">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_W_1.webp" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Menosan</h3>
+                        <p class="product-description">Menosan possesses phytoestrogens, which act as natural selective estrogen receptor modulators (SERMs).</p>
+                        <div class="product-price">
+                            <span class="price">₹ 205.00</span>
+                            <span class="discount-price">₹ 255.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_W_2.webp" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Renalka Syrup</h3>
+                        <p class="product-description">The coolant of the urinary tract</p>
+                        <div class="product-price">
+                            <span class="price">₹ 85.00</span>
+                            <span class="discount-price">₹ 135.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_W_3.webp" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Evecare Forte Tablets</h3>
+                        <p class="product-description">Himalaya Evecare forte Tablet is a polyherbal formulation.</p>
+                        <div class="product-price">
+                            <span class="price">₹ 80.00</span>
+                            <span class="discount-price">₹ 120.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\himalya\product_W_4.webp" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">V-Gel</h3>
+                        <p class="product-description">Quells infections, relieves symptoms</p>
+                        <div class="product-price">
+                            <span class="price">₹ 120.00</span>
+                            <span class="discount-price">₹ 150.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="brand" id="mamaearth">
+            <!-- row 1 -->
+            <div class="product-row">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\mamaearth\product_F_1.avif" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ubtan Face Wash with Turmeric & Saffron for Tan Removal</h3>
+                        <p class="product-description">Removes Tan | Brightens Skin</p>
+                        <div class="product-price">
+                            <span class="price">₹349.00	</span>
+                            <span class="discount-price">₹399.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\mamaearth\product_F_2.avif" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Rice Face Wash With Rice Water & Niacinamide</h3>
+                        <p class="product-description">Gently Cleanses Skin | Hydrates Skin</p>
+                        <div class="product-price">
+                            <span class="price">₹269.00</span>
+                            <span class="discount-price">₹289.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\mamaearth\product_F_3.avif" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Beetroot Daily Glow Face Cream With Beetroot & Hyaluronic Acid</h3>
+                        <p class="product-description">Gives A Hydrated Pink Glow | Makes Skin Soft | Gives Instant Brightening Effect</p>
+                        <div class="product-price">
+                            <span class="price">₹249.00	</span>
+                            <span class="discount-price">₹279.00	</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\mamaearth\product_F_4.avif" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Vitamin C Daily Glow Face Serum With Vitamin C & Turmeric for Radiant Skin </h3>
+                        <p class="product-description">Enriched with 50X Vitamin C* | Brightens Skin</p>
+                        <div class="product-price">
+                            <span class="price">₹349.00	</span>
+                            <span class="discount-price">₹399.00	</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- row 2 -->
+
+            
+        </div>
+        <div class="brand" id="derma">
+            <div class="product-row">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\Derma_co\product_F_1.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pigmentation Treatment & Winter Protection Kit</h3>
+                        <p class="product-description">Deeply Cleanse & Treat Pigmentation | Reduces Dark Spots & Hydrates | SPF50 PA++++ Protection</p>
+                        <div class="product-price">
+                            <span class="price">₹973.00
+                            </span>
+                            <span class="discount-price">₹1073.00
+                            </span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\Derma_co\product_F_2.jpg" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Hello Glowing Skin Combo</h3>
+                        <p class="product-description">Makes Skin Glow | Broad-Spectrum Sun Protection
+                        </p>
+                        <div class="product-price">
+                            <span class="price">₹1,113.00
+                            </span>
+                            <span class="discount-price">₹1,313.00
+                            </span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\Derma_co\product_F_3.jpg" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Radiant Skin Combo</h3>
+                        <p class="product-description">Makes Skin Glow | Broad Spectrum Sun Protection</p>
+                        <div class="product-price">
+                            <span class="price">₹1,113.00
+                            </span>
+                            <span class="discount-price">₹1,423.00
+                            </span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\Derma_co\product_F_4.jpg" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Niacinamide High Coverage Foundation</h3>
+                        <p class="product-description">12 Hour Long Stay | SPF 40 & PA+++ | Super-Lightweight | 12 Hour Oil Control</p>
+                        <div class="product-price">
+                            <span class="price">₹773.00
+                            </span>
+                            <span class="discount-price">₹973.00
+                            </span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="brand" id="lotus">
+            <!-- row 1 -->
+            <div class="product-row">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\lotus_herbals\product_F_1.webp" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Lotus Herbals Active Aloe + Niacinamide Calm & Brighten Night Gel</h3>
+                        <p class="product-description">Lotus Herbals Active Aloe + Niacinamide Calm & Brighten Night Gel is an innovative skincare solution meticulously formulated to address 
+                            the needs of those seeking a radiant, smooth, and healthy complexion.</p>
+                        <div class="product-price">
+                            <span class="price">₹ 375.00</span>
+                            <span class="discount-price">₹ 450.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\lotus_herbals\product_F_2.webp" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Lotus Herbals WHITEGLOW Skin brightening Gel Cream SPF 25 PA+++</h3>
+                        <p class="product-description">Protects skin from sunlight & brightens the complexion
+                        </p>
+                        <div class="product-price">
+                            <span class="price">435.00</span>
+                            <span class="discount-price">535.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\lotus_herbals\product_F_3.webp" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">WhiteGlow Vitamin C + Gold Radiance Facial Kit(4 in 1)</h3>
+                        <p class="product-description">A Skin-Brightening Creme infused with the power of 100X more Vitamin C</p>
+                        <div class="product-price">
+                            <span class="price">₹ 910.00</span>
+                            <span class="discount-price">₹ 950.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\lotus_herbals\product_F_4.webp" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Lotus DermaBotanics Kojic acid + Multi berry Serum</h3>
+                        <p class="product-description">Treat your pigmentation and promote healthy, clear skin with Lotus DermaBotanics Kojic Acid + Multi Berry Serum. </p>
+                        <div class="product-price">
+                            <span class="price">₹ 506.00</span>
+                            <span class="discount-price">₹ 596.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="brand" id="plum">
+            <!-- row 1 -->
+            <div class="product-row">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\plum\product_F_1.webp" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">15% Vitamin C Face Serum with Mandarin (30ml)</h3>
+                        <p class="product-description">Boosts Glow | Fades Dark Spots | Fights Hyperpigmentation</p>
+                        <div class="product-price">
+                            <span class="price">₹ 553</span>
+                            <span class="discount-price">₹ 653</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\plum\product_F_2.webp" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">10% Niacinamide Face Serum with Rice Water - 30ml</h3>
+                        <p class="product-description">Brightens | Fades Blemishes | Lightweight Milky Texture</p>
+                        <div class="product-price">
+                            <span class="price">₹ 519</span>
+                            <span class="discount-price">₹ 549</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\plum\product_F_3.webp" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Green Tea Pore Cleansing Face Wash</h3>
+                        <p class="product-description">Fights Pimples | Controls Excess Oil | Unclogs Pores</p>
+                        <div class="product-price">
+                            <span class="price">₹ 350</span>
+                            <span class="discount-price">₹ 389</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\plum\product_F_4.webp" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">2% Niacinamide & Rice Water SPF 50 PA+++ Hybrid Sunscreen</h3>
+                        <p class="product-description">3X Tan Reduction | UVA & UVB Protection | Brightens Skin</p>
+                        <div class="product-price">
+                            <span class="price">₹ 349</span>
+                            <span class="discount-price">₹ 399</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="brand" id="Minimalist">
+            <div class="product-row">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\minimalist\product_F_1.avif" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Salicylic Acid + LHA 2% Cleanser</h3>
+                        <p class="product-description">Reduces Sebum & Prevents Breakout Without Drying Skin</p>
+                        <div class="product-price">
+                            <span class="price">₹ 245</span>
+                            <span class="discount-price">₹ 295</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\minimalist\product_F_2.avif" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Broad Spectrum SPF 50, PA++++</h3>
+                        <p class="product-description">A light weight, moisturiser-meets-sunscreen. </p>
+                        <div class="product-price">
+                            <span class="price">₹ 349</span>
+                            <span class="discount-price">₹ 399</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\minimalist\product_F_3.avif" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Niacinamide 10% Face Serum</h3>
+                        <p class="product-description">For reducing sebum & pores, and even skin tone</p>
+                        <div class="product-price">
+                            <span class="price">₹ 499</span>
+                            <span class="discount-price">₹ 599</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="F:\fullstack projects\health portal\media\images\products\minimalist\product_F_4.avif" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Salicylic Acid 2% Face Serum</h3>
+                        <p class="product-description">Reduces Acne, Blackheads & Excessive Oil</p>
+                        <div class="product-price">
+                            <span class="price"> 525</span>
+                            <span class="discount-price"> 545</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            <p>© 2024 Online Pharma Store. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        function redirect(){
+            window.location = ("file:///F:/fullstack%20projects/health%20portal/home/home.html");
+        }
+    </script>
+    <script src="F:\chirag\Core_web_design_org\project\asset\js\bootstrap.min.js"></script>
+    <script src="F:\fullstack projects\health portal\store\store-brands\brand-store.js"></script>
+</body>
+</html>

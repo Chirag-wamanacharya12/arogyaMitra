@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+<h1>Register now</h1>
+    <form id="user-registration-form">
+        <!-- Email and Password for Guest Registration -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <!-- Dropdown to Select User Type -->
+        <label for="user-type">User Type:</label>
+        <select id="user-type" name="user-type" required>
+            <option value="guest">Guest</option>
+            <option value="patient">Patient</option>
+            <option value="physician">Physician</option>
+            <option value="practitioner">Practitioner</option>
+            <option value="researcher">Researcher</option>
+            <option value="service-provider">Service Provider</option>
+            <option value="health-content-creator">Health Content Creator</option>
+        </select>
+
+        <!-- Conditional Fields for Extended Registration -->
+        <div id="conditional-fields">
+            <!-- Additional fields will be added here based on the user type -->
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+    <h4>already have an account ? <a href="file:///f:/fullstack%20projects/health%20portal/login/login.html">log in</a></h4>
+    <script src="register.js"></script>
+
+</body>
+</html>

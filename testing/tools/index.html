@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Medication Tracker</h1>
+
+        <div class="buttons">
+            <button id="addMedicationBtn">Add Medication</button>
+            <button id="historyBtn">History</button>
+        </div>
+
+        <div class="table-container">
+            <h2>Upcoming Medications</h2>
+            <table id="upcomingMedicationTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Dosage</th>
+                        <th>Frequency</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Notes</th>
+                        <th>Modify</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Upcoming medications will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="historyPopup" class="popup">
+            <div class="popup-content scrollable-popup">
+                <span class="close">&times;</span>
+                <h2>Medication History</h2>
+                <div class="table-container history-table-container">
+                    <table id="historyTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Dosage</th>
+                                <th>Frequency</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- History medications will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Add Medication Popup -->
+    <div id="addMedicationPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Add Medication</h2>
+            <form id="medicationForm">
+                <label for="name">Medication Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="dosage">Dosage:</label>
+                <input type="text" id="dosage" required>
+
+                <label for="frequency">Frequency:</label>
+                <input type="text" id="frequency" required>
+
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" required>
+
+                <label for="endDate">End Date (optional):</label>
+                <input type="date" id="endDate">
+
+                <label for="notes">Notes:</label>
+                <textarea id="notes"></textarea>
+
+                <button type="submit">Add Medication</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="demo.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
