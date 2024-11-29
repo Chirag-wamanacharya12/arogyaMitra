@@ -1,0 +1,161 @@
+body{
+    background-color: #728fce;
+    color: #333;
+    padding: 15px;
+    margin: 0;
+}
+h2,h5,h6{
+    padding: 0;
+    margin: 0;
+    margin-top: 5%;
+}
+span{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    margin: 5px;
+}
+span i{
+    height: fit-content;
+    width: auto;
+    font-size: 50px;
+    margin-right: 1%;
+}
+span i:hover{
+    cursor: pointer;
+}
+h6{
+    font-size: 30px;
+    color: white;
+    margin: 5px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style-type: none;
+}
+ul li{
+    flex: 1 0 350px;
+    height: 160px;
+    border: 3px solid;
+    border-radius: 15px;
+    font-size: 30px;
+}
+ul li:hover{
+    cursor: pointer;
+    box-shadow: 10px 0px 50px 20px rgba(0, 0, 0, 0.42);
+}
+ul li p{
+    margin-left: 30px;
+}
+li img{
+    height: 45%;
+    width: auto;
+    position: relative;
+    margin-left: 70%;
+    margin-top: -2%;
+}
+#Emergency{
+    margin: 0;
+    margin-left: 5%;
+}
+li .count{
+    width: fit-content;
+    height: auto;
+    margin-left: 15px;
+    margin-top: -1%;
+}
+ul li:nth-child(1){
+    background-color: #ccffff;
+    border-color: #00bfff;
+}
+ul li:nth-child(2){
+    background-color: #fef250;
+    border-color: #ffbf00;
+}
+ul li:nth-child(3){
+    background-color: #99c68e;
+    border-color: #026c3d;
+}
+ul li:nth-child(4){
+    background-color: #ffa07a;
+    border-color: #e55451;
+}
+ul li:nth-child(5){
+    background-color: #e0b0ff;
+    border-color: #9e7bff;
+}
+ul li:nth-child(6){
+    background-color: #93ffe8;
+    border-color: #00827f;
+}
+ul li:nth-child(7){
+    background-color: #ff6347;
+    border-color: #ff0000;
+}
+
+/*---------- footer -----------*/
+.footer {
+    background-color: #007bff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color:whitesmoke;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis */
+    margin: 10px;
+    color:whitesmoke;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color:whitesmoke;
+}

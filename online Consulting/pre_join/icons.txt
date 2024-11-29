@@ -1,0 +1,11 @@
+Icons and state
+
+camera off(<i class="bi bi-camera-video-off"></i>)
+camera on(<i class="bi bi-camera-video"></i>)
+
+mic mute(<i class="bi bi-mic-mute"></i>)
+mic unmute(<i class="bi bi-mic"></i>)
+
+edit(<i class="bi bi-pencil-square"></i>)
+
+upload picture(<i class="bi bi-camera"></i>)

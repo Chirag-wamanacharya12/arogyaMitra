@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.new-appointment-btn {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.bookings-section {
+    margin-bottom: 30px;
+}
+
+.booking-record {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.booking-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.booking-info p {
+    margin: 0;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.view-details-btn {
+    background-color: #28a745;
+    color: white;
+    margin-right: 10px;
+}
+
+.reschedule-btn,
+.check-reports-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.reschedule-btn:hover,
+.check-reports-btn:hover {
+    background-color: #ffca2c;
+}
+
+.view-details-btn:hover {
+    background-color: #218838;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    opacity: 0.9;
+}

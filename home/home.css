@@ -1,0 +1,554 @@
+*{
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+}
+nav{
+    height: fit-content;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display:flex;
+}
+nav img{
+    align-self: center;
+}
+
+nav ul{
+    width: fit-content;
+    list-style-type: none;
+    height: inherit;
+    display: flex;
+    column-gap: 5%;
+    align-self:flex-end;
+    margin: 0;
+    margin-left: 22%;
+}
+
+nav ul li{
+    width: fit-content;
+    color: #333;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+    padding-block: 2%;
+    padding-inline: 3%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+nav ul li:hover{
+    border-color: white;
+    background-color:#007bffea;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+nav ul li:hover a{
+    color: white;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*------------------ widget section-----------------------------------------------------------------------------------------------*/
+.widget-section{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+/*-------------------- widget 1 ----------------------------------*/
+.widget.health-summary {
+    width: fit-content;
+    background-color: #b3ebf2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.widget.health-summary p {
+    color: #333;
+    font-weight: bold;
+}
+.widget.health-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+.widget.health-summary li {
+    margin: 10px 0;
+}
+
+/*-------------------- widget 2 ----------------------------------*/
+.widget.appointment-tracker {
+
+    width: fit-content;
+    background-color: #b3ebf2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-inline: 4%;
+    border-radius: 5px;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.widget.appointment-tracker p {
+    color: #333;
+    font-weight: bold;
+}
+.widget.appointment-tracker ul {
+    list-style-type: none;
+    padding: 0;
+}
+.widget.appointment-tracker li {
+    margin: 10px 0;
+}
+.widget.appointment-tracker .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.widget.appointment-tracker .btn:hover {
+    background-color: #0056b3;
+}
+
+/*-------------------- widget 3 ----------------------------------*/
+.widget.medication-reminder {
+    width: fit-content;
+    padding-inline: 1%;
+    background-color: #b3ebf2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.widget.medication-reminder p {
+    color: #333;
+    font-weight: bold;
+}
+.widget.medication-reminder ul {
+    list-style-type: none;
+    padding: 0;
+}
+.widget.medication-reminder li {
+    margin: 10px 0;
+}
+
+/*-------------------- widget 4 ----------------------------------*/
+.widget.health-records {
+    width: fit-content;
+    background-color: #b3ebf2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.widget.health-records p {
+    color: #333;
+    font-weight: bold;
+}
+.widget.health-records .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.widget.health-records .btn:hover {
+    background-color: #0056b3;
+}
+
+/*-------------------- widget 5 ----------------------------------*/
+.widget.symptom-checker {
+    width: fit-content;
+    background-color: #b3ebf2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.widget.symptom-checker p {
+    color: #333;
+    font-weight: bold;
+}
+.widget.symptom-checker input {
+    padding: 5px;
+    margin-right: 5px;
+    width: 95%;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+.widget.symptom-checker .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.widget.symptom-checker .btn:hover {
+    background-color: #0056b3;
+}
+
+/*-------------------- widget 6 ----------------------------------*/
+.widget.exercise-diet-log {
+    width: fit-content;
+    background-color: #b3ebf2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.widget.exercise-diet-log p {
+    color: #333;
+    font-weight: bold;
+}
+.widget.exercise-diet-log ul {
+    list-style-type: none;
+    padding: 0;
+}
+.widget.exercise-diet-log li {
+    margin: 10px 0;
+}
+
+/*-------------------- widget 7 ----------------------------------*/
+.widget.health-goals-tracker {
+    width: fit-content;
+    background-color: #b3ebf2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.widget.health-goals-tracker p {
+    color: #333;
+    font-weight: bold;
+}
+.widget.health-goals-tracker ul {
+    list-style-type: none;
+    padding: 0;
+}
+.widget.health-goals-tracker li {
+    margin: 10px 0;
+}
+
+/*-------------------- widget 8 ----------------------------------*/
+.widget.message-center {
+    width: fit-content;
+    background-color: #b3ebf2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.widget.message-center p {
+    color: #333;
+    font-weight: bold;
+}
+.widget.message-center ul {
+    list-style-type: none;
+    padding: 0;
+}
+.widget.message-center li {
+    margin: 10px 0;
+}
+
+.media{
+    height: fit-content;
+    width: 100%;
+    padding-block: 1%;
+    padding-inline: 1%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 2%;
+}
+.media p strong{
+    font-size: 30px;
+}
+.media .viewAll{
+    position: relative;
+    left: 85%;
+    width: fit-content;
+    padding-inline: 2%;
+    padding-block: 1%;
+    border: none;
+    background-color: #007bff;
+    color: whitesmoke;
+    border-radius: 15px;
+}
+.featured-content{
+    height: 100%;
+    width: 100%;
+    padding-block: 1%;
+    padding-inline: 1%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+
+}
+.featured-content video{
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+}
+
+/*------------------ Appointment booking ----------------------*/
+.appointment-section {
+    background: #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.appointment-section h2 {
+    text-align: center;
+    color: #003366;
+}
+
+#appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#appointment-form label {
+    font-weight: bold;
+    color: #003366;
+}
+
+#appointment-form select, #appointment-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #003399;
+}
+
+#appointment-confirmation {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*--------------------------------- subscription plans -----------------------*/
+.subscription-plans {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 1200px;
+}
+
+.plan-card {
+    background-color: #f0f4ff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 22%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan-card h3 {
+    color: #003366;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.plan-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan-card ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.plan-card button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.plan-card button:hover {
+    background-color: #003399;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+}
+
+/*--------------------------------- contact and support info -----------------------*/
+.contact-support-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 30px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info, .support-info {
+    width: 45%;
+    padding: 20px;
+    background-color: #f0f4ff;
+    border-radius: 10px;
+}
+
+.contact-info h2, .support-info h2 {
+    color: #003366;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info p, .support-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info ul, .support-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li, .support-info ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-info ul li strong, .support-info ul li strong {
+    color: #003366;
+}
+
+/* ---------- multilingual support ------------*/
+.language-selector {
+    margin: 20px;
+    font-size: 16px;
+}
+
+.content {
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+h1, p {
+    transition: display 0.5s ease;
+}
+
+/*---------- footer -----------*/
+.footer {
+    background-color: #007bff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color:whitesmoke;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis */
+    margin: 10px;
+    color:whitesmoke;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color:whitesmoke;
+}

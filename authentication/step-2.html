@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="step-2.css">
+    <title>OTP Validation</title>
+    <script>
+        function moveToNextInput(currentInput) {
+            if (currentInput.value.length >= currentInput.maxLength) {
+                const nextInput = currentInput.nextElementSibling;
+                if (nextInput) {
+                    nextInput.focus();
+                }
+            }
+        }
+
+        function validateOTP(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Show alert for successful login
+            alert("Login successful!");
+
+            // Redirect to home page after the alert is dismissed
+            window.location.href = "F:/fullstack projects/health portal/home/home.html";
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter OTP</h1>
+        <form onsubmit="validateOTP(event)">
+            <div class="otp-inputs">
+                <input type="text" maxlength="1" oninput="moveToNextInput(this)" required>
+                <input type="text" maxlength="1" oninput="moveToNextInput(this)" required>
+                <input type="text" maxlength="1" oninput="moveToNextInput(this)" required>
+                <input type="text" maxlength="1" oninput="moveToNextInput(this)" required>
+                <input type="text" maxlength="1" oninput="moveToNextInput(this)" required>
+                <input type="text" maxlength="1" oninput="moveToNextInput(this)" required>
+            </div>
+            <button type="submit">Validate OTP</button>
+        </form>
+        <a href="F:/fullstack projects/health portal/login/login.html">Back to Login</a>
+    </div>
+</body>
+</html>

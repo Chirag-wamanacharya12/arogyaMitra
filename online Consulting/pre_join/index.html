@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ask to join</title>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="C:\Users\Win10\Desktop\fullstack projects\medical portal\images\Logo.JPG" type="image/x-icon">
+</head>
+<body>
+    <span><i class="bi bi-arrow-left-short" id="back"></i></span><h1>Arogya mitra</h1>
+    <div id="count_down" class="time_left">
+        <h4 id="start">Starts in :</h4>
+        <span id="hrs">00</span>
+        <span id="min">00</span>
+        <span id="sec">00</span>
+    </div>
+    <div class="video"><video id="webcam" autoplay playsinline></video></div>
+    <div class="user" id="userDiv"><img src="C:\Users\Win10\Desktop\fullstack projects\health portal\images\images.jpeg"></div>
+    <div class="camera" id="cameraButton"><i class="bi bi-camera-video-off" id="cameraIcon"></i></div>
+    <div class="mic" id="micButton"><i class="bi bi-mic-mute" id="micIcon"></i></div>
+    <button class="askToJoin">Ask to join</button>
+    <div class="host">Meeting by : <span  id="host_name">Dr. Doctor_name</span></div>
+    <label class="ui-switch">
+        <input type="checkbox" id="dark-light">
+        <div class="slider">
+          <div class="circle"></div>
+        </div>
+    </label>
+    <div class="card">
+    <div class="card-border-top">
+        </div>
+        <div class="img"><img src="C:\Users\Win10\Desktop\fullstack projects\health portal\images\default_user.jpeg"></div>
+        <span>Doctor_name</span>
+        <p class="job">Speciallity</p>
+        <button>View Profile</button>
+    </div>
+    <div class="agenda">
+        <h4>Agenda :</h4>
+        <p>
+            ( 1 ) - Welcome
+                Introduction by Dr. [Dentist's Name]
+
+            ( 2 ) - Patient's Health Overview
+                Review of dental history
+                Current concerns and symptoms
+
+            ( 3 ) - Examination Results
+                Discuss recent findings
+                Explain any issues detected
+
+            ( 4 ) - Treatment Plan
+                Outline recommended procedures
+                Discuss options and timelines
+
+            ( 5 ) - Patient Questions
+                Address any concerns or queries
+
+            ( 6 ) - Next Steps
+                Schedule follow-up appointments
+                Provide care instructions
+
+            ( 7 ) - End of Meeting 
+        </p>
+    </div>
+    <script src="https://cdn.rawgit.com/naptha/tesseract.js/0.2.0/dist/tesseract.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

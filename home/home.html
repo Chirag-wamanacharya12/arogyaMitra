@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arogya mitra | Home</title>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="f:\fullstack projects\health portal\home\home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="F:\fullstack projects\health portal\media\images\Portal_logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="F:\fullstack projects\health portal\media\images\Arogya.jpg" alt=""></div>
+        <ul>
+            <li><a href="file:///f:/fullstack%20projects/health%20portal/store/store-home/home.html">Store</a></li>
+            <li><a href="file:///F:/fullstack%20projects/health%20portal/reports/reports.html">Reports</a></li>
+            <li><a href="file:///F:/fullstack%20projects/health%20portal/bookings/booking.html">Bookings</a></li>
+            <li><a href="file:///f:/fullstack%20projects/health%20portal/Tools_&_Calculator/BMI_Calculator/BMI_Calc.html">Services</a></li>
+            <li><a href="file:///F:/fullstack%20projects/health%20portal/store/store-contact-us/contact-us.html">Contact_us</a></li>
+            <li><a href="file:///f:/fullstack%20projects/health%20portal/register/register.html"><i class="bi bi-person-fill"></i></a></li>
+        </ul>
+    </nav>
+    <div class="widget-section">
+        <!-- Widget 1-->
+        <div class="widget health-summary">
+            <p>Health Summary</p>
+            <ul>
+                <li>BMI: <span id="bmi-value">24.5</span></li>
+                <li>Blood Pressure: <span id="bp-value">120/80 mmHg</span></li>
+                <li>Heart Rate: <span id="hr-value">72 bpm</span></li>
+            </ul>
+        </div>
+
+        <!-- widget 2 -->
+        <div class="widget appointment-tracker">
+            <p>Appointment Tracker</p>
+            <ul>
+                <li>
+                    <strong>Next Appointment:</strong> <span id="next-appointment">Dr. Smith - Oct 10, 2024</span>
+                    <button class="btn reschedule">Reschedule</button>
+                </li>
+                <li>
+                    <strong>Last Appointment:</strong> <span id="last-appointment">Sep 15, 2024</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- widget 3 -->
+        <div class="widget medication-reminder">
+            <p>Medication Reminder</p>
+            <ul>
+                <li>
+                    <strong>Medication:</strong> <span id="medication-name">Aspirin</span>
+                    <span id="medication-time">Take at 8 AM</span>
+                </li>
+                <li>
+                    <strong>Medication:</strong> <span id="medication-name-2">Lisinopril</span>
+                    <span id="medication-time-2">Take at 9 AM</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- widget 4 -->
+        <div class="widget health-records">
+            <p>Personal Health Records</p>
+            <button class="btn view-records">View Records</button>
+        </div>
+
+    </div>
+    <div class="widget-section">
+        <!-- widget 5 -->
+        <div class="widget symptom-checker">
+            <p>Symptom Checker</p>
+            <input type="text" placeholder="Enter your symptoms..." id="symptom-input">
+            <button class="btn check-symptoms">Check Symptoms</button>
+        </div>
+
+        <!-- widget 6-->
+        <div class="widget exercise-diet-log">
+            <p>Exercise & Diet Log</p>
+            <ul>
+                <li>Calories Consumed Today: <span id="calories-consumed">2000 kcal</span></li>
+                <li>Steps Taken: <span id="steps-taken">8000 steps</span></li>
+            </ul>
+        </div>
+
+        <!-- widget 7 -->
+        <div class="widget health-goals-tracker">
+            <p>Health Goals Tracker</p>
+            <ul>
+                <li>Weight Loss Goal: <span id="weight-goal">5 kg</span> (Current: <span id="current-weight">2 kg</span>)</li>
+                <li>Steps Goal: <span id="steps-goal">10,000 steps</span> (Current: <span id="current-steps">8000 steps</span>)</li>
+            </ul>
+        </div>
+
+        <!-- widget 8 -->
+        <div class="widget message-center">
+            <p>Message Center</p>
+            <ul>
+                <li>You have a new message from Dr. Smith.</li>
+                <li>Reminder: Your appointment is tomorrow at 3 PM.</li>
+            </ul>
+        </div>
+    </div>
+    <section class="media">
+        <p><strong>Featured content</strong></p>
+        <button class="viewAll" onclick="redirect()">View all</button>
+        <div class="featured-content">
+            <video muted class="hoverVideo" src="F:\fullstack projects\health portal\media\videos\shorts\12 Foods For Better Skin Health.mp4"></video>
+            <video muted class="hoverVideo" src="F:\fullstack projects\health portal\media\videos\shorts\dislocated-finger-shoulder-1080-ytshorts.savetube.me.mp4"></video>
+            <video muted class="hoverVideo" src="F:\fullstack projects\health portal\media\videos\shorts\what-is-cancer-dr-jamal-a-khan-drjamalkhan-1080-ytshorts.savetube.me.mp4"></video>
+            <video muted class="hoverVideo" src="F:\fullstack projects\health portal\media\videos\shorts\8-warning-signs-of-kidney-disease-drashishsachan-1080-ytshorts.savetube.me.mp4"></video>
+            <video muted class="hoverVideo" src="F:\fullstack projects\health portal\media\videos\shorts\is-health-insurance-a-scam-1080-ytshorts.savetube.me.mp4"></video>
+        </div> 
+    </section>
+
+    <!-- Appointment booking-->
+    <div class="appointment-section" id="book_Appointment">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor">
+                <option value="">Choose a Doctor</option>
+                <option value="Dr. Smith">Dr. Smith - Cardiologist</option>
+                <option value="Dr. Johnson">Dr. Johnson - Dermatologist</option>
+                <option value="Dr. Brown">Dr. Brown - General Physician</option>
+            </select>
+    
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+    
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+    
+            <button type="submit">Confirm Appointment</button>
+        </form>
+    
+        <div id="appointment-confirmation"></div>
+    </div>
+
+    <!-- Subscription plans -->
+    <div class="subscription-plans">
+        <div class="plan-card">
+            <h3>Free</h3>
+            <p>Basic features with limited access.</p>
+            <ul>
+                <li>Access to basic content</li>
+                <li>Community support</li>
+                <li>Limited appointment booking</li>
+            </ul>
+            <button>Choose Free</button>
+        </div>
+    
+        <div class="plan-card">
+            <h3>Basic</h3>
+            <p>Unlock more features with the Basic plan.</p>
+            <ul>
+                <li>All Free plan features</li>
+                <li>Access to premium content</li>
+                <li>Unlimited appointment booking</li>
+            </ul>
+            <button>Choose Basic</button>
+        </div>
+    
+        <div class="plan-card">
+            <h3>Premium</h3>
+            <p>Get advanced features with Premium plan.</p>
+            <ul>
+                <li>All Basic plan features</li>
+                <li>Dedicated support</li>
+                <li>Advanced health insights</li>
+            </ul>
+            <button>Choose Premium</button>
+        </div>
+    
+        <div class="plan-card">
+            <h3>Exclusive</h3>
+            <p>Full access to all services with Exclusive.</p>
+            <ul>
+                <li>All Premium plan features</li>
+                <li>Personal health coach</li>
+                <li>Exclusive webinars</li>
+            </ul>
+            <button>Choose Exclusive</button>
+        </div>
+    </div>
+
+    <!-- contact and support info -->
+    <div class="contact-support-section">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, feel free to reach out to us.</p>
+            <ul>
+                <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+                <li><strong>Email:</strong> support@healthportal.com</li>
+            </ul>
+        </div>
+    
+        <div class="support-info">
+            <h2>Support Hours</h2>
+            <p>Our team is here to help you during the following hours:</p>
+            <ul>
+                <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</li>
+                <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM</li>
+                <li><strong>Sunday:</strong> Closed</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- multilingual support -->
+    <div class="language-selector">
+        <label for="language">Select Language:</label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="zh">Chinese</option>
+        </select>
+    </div>
+    
+    <div class="content" id="content">
+        <h1 data-lang="en">Welcome to the Health Portal</h1>
+        <h1 data-lang="es" style="display: none;">Bienvenido al Portal de Salud</h1>
+        <h1 data-lang="fr" style="display: none;">Bienvenue sur le portail de santé</h1>
+        <h1 data-lang="de" style="display: none;">Willkommen im Gesundheitsportal</h1>
+        <h1 data-lang="zh" style="display: none;">欢迎来到健康门户</h1>
+        <p data-lang="en">This portal provides various health services and resources.</p>
+        <p data-lang="es" style="display: none;">Este portal ofrece varios servicios y recursos de salud.</p>
+        <p data-lang="fr" style="display: none;">Ce portail propose divers services et ressources de santé.</p>
+        <p data-lang="de" style="display: none;">Dieses Portal bietet verschiedene Gesundheitsdienste und -ressourcen.</p>
+        <p data-lang="zh" style="display: none;">本门户提供各种健康服务和资源。</p>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are committed to providing reliable health information and services.</p>
+                <p>&copy; 2024 Health Portal</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="file:///F:/fullstack%20projects/health%20portal/home/home.html">Home</a></li>
+                    <li><a href="file:///F:/fullstack%20projects/health%20portal/Tools_&_Calculator/BMI_Calculator/BMI_Calc.html">Services</a></li>
+                    <li><a href="#book_Appointment">Appointments</a></li>
+                    <li><a href="file:///F:/fullstack%20projects/health%20portal/store/store-contact-us/contact-us.html">Contact Us</a></li>
+                    <li><a href="file:///F:/fullstack%20projects/health%20portal/FAQ/index.html">FAQ</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@healthportal.com</p>
+                <p>Phone: +1 (234) 567-8901</p>
+                <p>Address: 123 Health St, Wellness City, HC 12345</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/posts/chirag-wamanacharya-a3ab6b255_health-wellness-goodhealth-activity-7242222974605373442-p55B?utm_source=share&utm_medium=member_android" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>Privacy Policy | Terms of Service | Disclaimer</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        function redirect(){
+            window.location = ("file:///F:/fullstack%20projects/health%20portal/Full_screen_content/shorts/index.html");
+        }
+    </script>
+    <script src="home.js"></script>    
+</body>
+</html>
